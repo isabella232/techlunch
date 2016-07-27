@@ -7,7 +7,7 @@ all face.
 This repo holds the slides (Brunch + Reveal) that we use to present the meetup
 every month.
 
-## Usage
+## Local testing
 
 ```
 npm install
@@ -15,4 +15,10 @@ npm run serve
 ```
 
 Slides will be available on [http://localhost:5013/](http://localhost:5013/)
+
+## Pushing
+
+Use `npm run deploy` to deploy on
+[https://community.algolia.com/techlunch-slides/](https://community.algolia.com/techlunch-slides/)
+
 
