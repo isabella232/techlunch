@@ -21,4 +21,9 @@ Slides will be available on [http://localhost:5013/](http://localhost:5013/)
 Use `npm run deploy` to deploy on
 [https://community.algolia.com/techlunch-slides/](https://community.algolia.com/techlunch-slides/)
 
+## List
+
+To get the list of attendees for an event, run `npm run list {meetup.com url of
+the event}`
+
 

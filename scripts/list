@@ -1,0 +1,86 @@
+#!/usr/bin/env ruby
+require 'awesome_print'
+require 'json'
+require 'open-uri'
+require 'rmeetup'
+require 'nokogiri'
+
+# Output the list of all attendees for a Tech Lunch event
+class TechLunchList
+  def initialize(url)
+    @url = url
+    if @url.nil?
+      puts "You must pass the event url as parameter"
+      exit 0
+    end
+    @event_id = event_id(url)
+    @client = RMeetup::Client.new do |config|
+      config.api_key = File.read('./_meetup_api_key').strip
+    end
+  end
+
+  def html(url)
+    raw = open(url, &:read)
+    Nokogiri::HTML(raw)
+  end
+
+  def json(url)
+    raw = open(url, &:read)
+    JSON.parse(raw)
+  end
+
+  def event_id(url)
+    url.split('/').last
+  end
+
+  def event_details
+    @client.fetch(:events, event_id: @event_id).first.event
+  end
+
+  def event_users
+    index = html(@url)
+    list = index.css('#rsvp-list li')
+    user_ids = list.map do |user|
+      user.attribute('data-memberid').text
+    end
+    user_ids
+  end
+
+  def user_details(urlname, user_id)
+    url = "https://api.meetup.com/#{urlname}/members/#{user_id}"
+    user_url = "http://www.meetup.com/#{urlname}/members/#{user_id}/"
+    details = json(url)
+
+    answers = details['group_profile']['answers']
+    company = answers[0]['answer']
+
+    {
+      name: details['name'],
+      url: user_url,
+      bio: details['bio'],
+      company: company
+    }
+  end
+    
+  def run
+    event = event_details
+    urlname = event['group']['urlname']
+    waitlist_count = event['waitlist_count']
+    yes_count = event['yes_rsvp_count']
+    max_count = event['rsvp_limit']
+    puts "#{yes_count}/#{max_count} (+#{waitlist_count} on waiting list)"
+
+    all_users = event_users
+
+    all_users.each do |id|
+      user = user_details(urlname, id)
+      puts user[:name]
+      puts user[:url]
+      puts user[:bio] unless user[:bio].nil?
+      puts user[:company] unless user[:company].nil?
+      puts "---"
+      puts ''
+    end
+  end
+end
+TechLunchList.new(ARGV[0]).run

@@ -15,7 +15,9 @@
     "build": "./scripts/build",
     "deploy": "./scripts/deploy",
     "lint": "./scripts/lint",
-    "serve": "./scripts/serve"
+    "serve": "./scripts/serve",
+    "list": "./scripts/list",
+    "postinstall": "./scripts/postinstall"
   },
   "devDependencies": {
     "auto-reload-brunch": "2.0.0",
