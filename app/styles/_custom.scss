@@ -1,11 +1,4 @@
 .reveal {
-  // Who am I?
-  .whoami-logo {
-    margin-bottom: 1rem;
-    display: block;
-    border: none;
-  }
-
   blockquote {
     text-align: left;
     width: 100%;
@@ -20,44 +13,34 @@
     }
   }
 
-  .jekyll-quote {
+  .theme {
+    margin: 2rem 0px;
   }
 
-  // Algolia animation
-  .column-step[data-step="1"] {
-    .img-step1 { display: block; }
-    .img-step2 { display: none; }
-    .img-step3 { display: none; }
+  .talks {
+    margin: 0;
   }
-  .column-step[data-step="2"] {
-    .img-step1 { display: none; }
-    .img-step2 { display: block; }
-    .img-step3 { display: none; }
+  .talk {
+    list-style: none;
+    margin-bottom: 1rem;
   }
-  .column-step[data-step="3"] {
-    .img-step1 { display: none; }
-    .img-step2 { display: none; }
-    .img-step3 { display: block; }
+  .talk--author {
+    overflow: hidden;
   }
-
-
-  .logos {
-    display: flex;
-    flex-flow: column nowrap;
+  .talk--image {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
   }
-  .logos-link {
-    border: none;
-    flex: 1;
-    text-align: center;
-    display: inline-block;
-    padding: 15px;
+  .talk--speaker {
+    height: 60px;
+    line-height: 60px;
   }
-  .logos-logo {
-    height: 150px;
-    max-height: 250px;
+  .talk--title {
+    padding: 2rem 0px 2rem 70px;
+    font-style: italic;
   }
 
-  .intro-author {
-    margin-top: 3rem;
-  }
 }
