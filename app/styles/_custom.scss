@@ -1,0 +1,63 @@
+.reveal {
+  // Who am I?
+  .whoami-logo {
+    margin-bottom: 1rem;
+    display: block;
+    border: none;
+  }
+
+  blockquote {
+    text-align: left;
+    width: 100%;
+    padding: .5rem;
+    opacity: .7;
+    font-size: 2rem;
+    line-height: 1.4;
+    background: #121212;
+    margin-bottom: 1.5rem;
+    ol {
+      margin-bottom: 0;
+    }
+  }
+
+  .jekyll-quote {
+  }
+
+  // Algolia animation
+  .column-step[data-step="1"] {
+    .img-step1 { display: block; }
+    .img-step2 { display: none; }
+    .img-step3 { display: none; }
+  }
+  .column-step[data-step="2"] {
+    .img-step1 { display: none; }
+    .img-step2 { display: block; }
+    .img-step3 { display: none; }
+  }
+  .column-step[data-step="3"] {
+    .img-step1 { display: none; }
+    .img-step2 { display: none; }
+    .img-step3 { display: block; }
+  }
+
+
+  .logos {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .logos-link {
+    border: none;
+    flex: 1;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+  }
+  .logos-logo {
+    height: 150px;
+    max-height: 250px;
+  }
+
+  .intro-author {
+    margin-top: 3rem;
+  }
+}
