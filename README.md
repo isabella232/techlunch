@@ -7,6 +7,29 @@ all face.
 This repo holds the slides (Brunch + Reveal) that we use to present the meetup
 every month.
 
+## Ideas
+
+Ideas for future events:
+
+### Data Visualization
+
+See with d3js meetup organisers.
+
+### Support
+
+How do you do support? Dedicated team, team effort, automated, manual? Do you
+have a Q&A team, etc. Captain Train did a great talk about it.
+
+### CI
+
+How to do your CI. Travis is nice for open-source but the 5 concurrent jobs slow
+us down. Pro version is expensive for only 10 jobs.
+Gitlab CI seems nice, but too coupled with Gitlab.
+CircleCI? I was not hearing good feedbacks from it.
+Manual Jenkins?
+
+Would be nice to have talks from people each using a different solution.
+
 ## Local testing
 
 ```
