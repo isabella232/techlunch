@@ -20,6 +20,13 @@ See with d3js meetup organisers.
 How do you do support? Dedicated team, team effort, automated, manual? Do you
 have a Q&A team, etc. Captain Train did a great talk about it.
 
+### Buy or Build
+
+Should you build something internally, or should you use an external service
+that does it already? When is it better to do one or the other?
+
+Stripe would be interested in presenting something.
+
 ### CI
 
 How to do your CI. Travis is nice for open-source but the 5 concurrent jobs slow
