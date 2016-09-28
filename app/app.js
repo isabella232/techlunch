@@ -3,6 +3,8 @@ let Marvel = {
     // Full list of configuration options available here:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
+      width: 1200,
+      // height: 500,
       controls: false,
       progress: true,
       history: true,
