@@ -26,20 +26,21 @@
   }
   .talk--author {
     overflow: hidden;
+    font-weight: bold;
   }
   .talk--image {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     float: left;
     margin-right: 10px;
   }
   .talk--speaker {
-    height: 60px;
-    line-height: 60px;
+    height: 80px;
+    line-height: 80px;
   }
   .talk--title {
-    padding: 2rem 0px 2rem 70px;
+    padding: 2rem 0px 2rem 90px;
     font-style: italic;
   }
 
