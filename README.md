@@ -13,12 +13,7 @@ Ideas for future events:
 
 ### Data Visualization
 
-See with d3js meetup organisers.
-
-### Support
-
-How do you do support? Dedicated team, team effort, automated, manual? Do you
-have a Q&A team, etc. Captain Train did a great talk about it.
+See with d3js meetup organisers / ToucanToco
 
 ### Buy or Build
 
@@ -26,6 +21,27 @@ Should you build something internally, or should you use an external service
 that does it already? When is it better to do one or the other?
 
 Stripe would be interested in presenting something.
+
+### Machine Learning
+
+Fabien Vauchelles did a very nice explanatory talk at the TakeOffConf 2016.
+Might be nice to explain the basics, and then who is doing what with it.
+
+### (Chat)bots
+
+Amazon Echo or Slackbots, a lot of API calls are going to come from bots. What
+should be changed in an API to make it more bot-compliant? What can be built
+with it? How does this change the way we interact with API?
+
+Nicolas Grenié talked about it at TakeOffConf 2016. Dustin did build an Echo
+/ Algolia integration. CommitStrip used Wit.ai and Algolia.
+
+### Internet of Things
+
+More and more devices are connected. Connected home, connected car, connected
+whatever. We also saw a massive DNS DDoS attack from an IoT botnet. How does
+this change our business? Is that new ways of consuming APIs? Is that new
+devices to build for? Is that new tools we can use ourselves?
 
 ### CI
 
