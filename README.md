@@ -15,13 +15,6 @@ Ideas for future events:
 
 See with d3js meetup organisers / ToucanToco
 
-### Buy or Build
-
-Should you build something internally, or should you use an external service
-that does it already? When is it better to do one or the other?
-
-Stripe would be interested in presenting something.
-
 ### Machine Learning
 
 Fabien Vauchelles did a very nice explanatory talk at the TakeOffConf 2016.
